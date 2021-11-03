@@ -1,0 +1,20 @@
+{
+  "name": "AuthBee",
+  "version": "1.0.0",
+  "description": "AuthBee is a NPM package to implement authentication in your JavaScript project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakyapeiris/AuthBee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shakyapeiris/AuthBee/issues"
+  },
+  "homepage": "https://github.com/shakyapeiris/AuthBee#readme"
+}
