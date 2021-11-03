@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "rimraf build && webpack",
+        "build": "rimraf dist && webpack",
         "start": "webpack serve",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
