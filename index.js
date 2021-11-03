@@ -4,8 +4,8 @@ const getData = require('./lib/getData');
 const verify = require('./lib/verify');
 
 module.exports = {
-  login,
-  logout,
-  getData,
-  verify,
+    login,
+    logout,
+    getData,
+    verify,
 };

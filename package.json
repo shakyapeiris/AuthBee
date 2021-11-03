@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/shakyapeiris/AuthBee/issues"
   },
-  "homepage": "https://github.com/shakyapeiris/AuthBee#readme"
+  "homepage": "https://github.com/shakyapeiris/AuthBee#readme",
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "prettier": "^2.4.1"
+  }
 }
