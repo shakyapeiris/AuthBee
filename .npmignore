@@ -1,0 +1,9 @@
+example
+.eslintignore
+.eslintrc.json
+.gitignore
+.prettierignore
+.prettierrc
+LICENSE
+README.md
+node_modules
