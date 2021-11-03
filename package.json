@@ -18,7 +18,14 @@
     },
     "homepage": "https://github.com/shakyapeiris/AuthBee#readme",
     "devDependencies": {
+        "@babel/core": "^7.16.0",
+        "@babel/preset-env": "^7.16.0",
+        "@babel/preset-react": "^7.16.0",
+        "babel-loader": "^8.2.3",
+        "css-loader": "^6.5.0",
         "eslint": "^8.1.0",
-        "prettier": "^2.4.1"
+        "html-webpack-plugin": "^5.5.0",
+        "prettier": "^2.4.1",
+        "style-loader": "^3.3.1"
     }
 }
