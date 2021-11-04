@@ -1,0 +1,19 @@
+.Header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Nav ul {
+    list-style: none;
+}
+
+.Nav ul li {
+    display: inline-flex;
+    margin-right: 7px;
+}
+
+.Nav ul li:last-child {
+    margin-right: none;
+}
