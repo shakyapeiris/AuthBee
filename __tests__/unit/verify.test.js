@@ -19,30 +19,30 @@ let dummyData = {
 };
 
 describe('Unit tests of verify function', () => {
-	test('Should send false if expiration time is not set', (done) => {
-		expect(verify()).toBe(false);
-		done();
-	});
+    test('Should send false if expiration time is not set', (done) => {
+        expect(verify()).toBe(false);
+        done();
+    });
 
-	test('Should send true if expiration time is not reached', (done) => {
-		const expirationDate = new Date().getTime() + dummyData.expiresIn * 3600000;
-		localStorage.setItem('token', dummyData.token);
-		localStorage.setItem('expiresIn', expirationDate);
+    test('Should send true if expiration time is not reached', (done) => {
+        const expirationDate = new Date().getTime() + dummyData.expiresIn * 3600000;
+        localStorage.setItem('token', dummyData.token);
+        localStorage.setItem('expiresIn', expirationDate);
 
-		expect(verify()).toBe(true);
-		done()
-	});
+        expect(verify()).toBe(true);
+        done();
+    });
 
-	test('Should send false if expired', (done) => {
-		const expirationDate = new Date().getTime() + dummyData.expiresIn * 3600000;
-		localStorage.setItem('token', dummyData.token);
-		localStorage.setItem('expiresIn', expirationDate);
+    test('Should send false if expired', (done) => {
+        const expirationDate = new Date().getTime() + dummyData.expiresIn * 3600000;
+        localStorage.setItem('token', dummyData.token);
+        localStorage.setItem('expiresIn', expirationDate);
 
-		jest
-		  .useFakeTimers()
-		  .setSystemTime(expirationDate + 500);
+        jest
+            .useFakeTimers()
+            .setSystemTime(expirationDate + 500);
 
-		expect(verify()).toBe(false);
-		done()
-	})
-})
+        expect(verify()).toBe(false);
+        done();
+    });
+});

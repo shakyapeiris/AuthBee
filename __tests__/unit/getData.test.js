@@ -19,19 +19,19 @@ let dummyData = {
 };
 
 describe('Unit tests of getData function', () => {
-	test('Should send an error if not logged in', (done) => {
-		expect.assertions(1);
+    test('Should send an error if not logged in', (done) => {
+        expect.assertions(1);
         expect(getData()).rejects.toEqual('Must be logged in order to retrieve data');
         done();
-	})
+    });
 
-	test('Should send data if user is already logged in', (done) => {
-		localStorage.setItem('token', dummyData.token);
-		localStorage.setItem('expiresIn', dummyData.expiresIn);
-		dummyData.expiresIn = dummyData.expiresIn.toString();
-		getData().then((data) => {
-			expect(data).toStrictEqual(dummyData);
-			done();
-		}).catch(done)
-	})
-})
+    test('Should send data if user is already logged in', (done) => {
+        localStorage.setItem('token', dummyData.token);
+        localStorage.setItem('expiresIn', dummyData.expiresIn);
+        dummyData.expiresIn = dummyData.expiresIn.toString();
+        getData().then((data) => {
+            expect(data).toStrictEqual(dummyData);
+            done();
+        }).catch(done);
+    });
+});
