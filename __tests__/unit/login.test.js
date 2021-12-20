@@ -32,4 +32,11 @@ describe('Unit tests of login module', () => {
         expect(login()).rejects.toEqual('Missing the token or expiresIn');
         done();
     })
+
+    test('Should send an error when expiration date is not a number', (done) => {
+        dummyData.expiresIn = "someText";
+        expect.assertions(1);
+        expect(login(dummyData)).rejects.toEqual('Expiration date must be an integer');
+        done();
+    })
 });
