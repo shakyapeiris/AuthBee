@@ -17,12 +17,11 @@ const AuthProvider = ({ children }) => {
             getData()
                 .then(({ token }) => {
                     setToken(token);
-                    console.log(token)
+                    console.log(token);
                 })
                 .catch(console.log);
-        }
-        else {
-            console.log('Unverified!')
+        } else {
+            console.log('Unverified!');
         }
     }, []);
 
@@ -32,7 +31,9 @@ const AuthProvider = ({ children }) => {
         token,
     };
 
-    return <authContext.Provider value={value}>{ children }</authContext.Provider>;
+    return (
+        <authContext.Provider value={value}>{children}</authContext.Provider>
+    );
 };
 
 export default AuthProvider;

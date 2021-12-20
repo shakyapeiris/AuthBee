@@ -20,7 +20,7 @@ const NavProvider = ({ routes, children }) => {
         route,
         navigate,
     };
-    return <navContext.Provider value={value}>{ children }</navContext.Provider>;
+    return <navContext.Provider value={value}>{children}</navContext.Provider>;
 };
 
 export default NavProvider;

@@ -45,16 +45,18 @@ const NavBar = ({ children }) => {
                             </li>
                         )}
                         {!authCtx.token && (
-                            <li onClick={() => {
-                                navCtx.navigate('/login');
-                            }}>
+                            <li
+                                onClick={() => {
+                                    navCtx.navigate('/login');
+                                }}
+                            >
                                 Try the demo!
                             </li>
                         )}
                     </ul>
                 </nav>
             </header>
-            <div>{ children }</div>
+            <div>{children}</div>
         </>
     );
 };

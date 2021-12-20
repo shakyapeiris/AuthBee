@@ -10,7 +10,13 @@
         "type": "git",
         "url": "git+https://github.com/shakyapeiris/AuthBee.git"
     },
-    "keywords": ["javascript", "authentication", "authorization", "jwt", "authbee"],
+    "keywords": [
+        "javascript",
+        "authentication",
+        "authorization",
+        "jwt",
+        "authbee"
+    ],
     "author": "",
     "license": "ISC",
     "bugs": {
