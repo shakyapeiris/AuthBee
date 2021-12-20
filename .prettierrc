@@ -1,6 +1,5 @@
 {
     "singleQuote": true,
     "semi": true,
-    "tabWidth": 4,
-    "editor.formatOnSave": true
+    "tabWidth": 4
 }
