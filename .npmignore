@@ -7,3 +7,4 @@ example
 LICENSE
 README.md
 node_modules
+__tests__
