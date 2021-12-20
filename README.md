@@ -4,7 +4,7 @@
 
 # AuthBee
 
-AuthBee is a NPM package to implement authentication in your JavaScript project. If you are using JWT in your project, this is the best option for you since this tracks expirationDate with the help of localStorage and logouts the usert if token is expired. Also, I encourage you to refer example, which you'll be able to gain more understanding about the functions.
+AuthBee is a NPM package to implement authentication in your JavaScript project. If you are using JWT in your project, this is the best option for you since this tracks expirationDate with the help of localStorage and logouts the usert if token is expired.
 
 ## Features
 
@@ -13,7 +13,7 @@ AuthBee is a NPM package to implement authentication in your JavaScript project.
 
 ## How to use
 
-You can simply import and call ``` login, logout, verify and getData``` functions in your application with respective parameters. But I highly encourage you to refer documentation [here](https://npmjs.com/authbee)
+You can simply import and call ``` login, logout, verify and getData``` functions in your application with respective parameters. But I highly encourage you to refer documentation [here](https://npmjs.com/authbee).  Also, I encourage you to refer example, which you'll be able to gain more understanding about the functions.
 
 ## Documentation
 
