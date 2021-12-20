@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./example/public/icon.png" />
+  <img width="250px" height="250px" src="./example/public/icon.png" />
 </p>
 
 # AuthBee
