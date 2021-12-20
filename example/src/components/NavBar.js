@@ -1,20 +1,60 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { authContext } from '../context/authContext';
+import { navContext } from '../context/navContext';
 import classes from './NavBar.module.css';
 
-const NavBar = () => {
+const NavBar = ({ children }) => {
+    const authCtx = useContext(authContext);
+    const navCtx = useContext(navContext);
     return (
         <>
             <header className={classes.Header}>
+                <h1>AuthBee</h1>
                 <nav className={classes.Nav}>
                     <ul>
-                        <li>Home</li>
-                        <li>Login</li>
-                        <li>Account</li>
-                        <li>Logout</li>
+                        <li
+                            onClick={() => {
+                                navCtx.navigate('/');
+                            }}
+                        >
+                            Home
+                        </li>
+                        <li
+                            onClick={() => {
+                                navCtx.navigate('/docs');
+                            }}
+                        >
+                            Docs
+                        </li>
+                        {authCtx.token && (
+                            <li
+                                onClick={() => {
+                                    navCtx.navigate('/account');
+                                }}
+                            >
+                                Account
+                            </li>
+                        )}
+                        {authCtx.token && (
+                            <li
+                                onClick={() => {
+                                    authCtx.logout();
+                                }}
+                            >
+                                Logout
+                            </li>
+                        )}
+                        {!authCtx.token && (
+                            <li onClick={() => {
+                                navCtx.navigate('/login');
+                            }}>
+                                Try the demo!
+                            </li>
+                        )}
                     </ul>
                 </nav>
             </header>
-            <div></div>
+            <div>{ children }</div>
         </>
     );
 };

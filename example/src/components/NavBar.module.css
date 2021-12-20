@@ -3,6 +3,12 @@
     padding: 20px;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    background: #fdf9f1;
+}
+
+.Header h1{
+	font-weight: 800;
 }
 
 .Nav ul {
@@ -12,6 +18,14 @@
 .Nav ul li {
     display: inline-flex;
     margin-right: 7px;
+    cursor: pointer;
+    padding-bottom: 6px;
+    transition: 0.1s border-color ease;
+}
+
+.Nav ul li:hover{
+    padding-bottom: 3px;
+	border-bottom: 3px solid #563e33;
 }
 
 .Nav ul li:last-child {
