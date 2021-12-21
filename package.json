@@ -1,6 +1,6 @@
 {
-    "name": "@seycomplk/authbee",
-    "version": "1.0.1",
+    "name": "authbee",
+    "version": "1.0.2",
     "description": "AuthBee is a NPM package to implement authentication in your JavaScript project",
     "main": "index.js",
     "scripts": {
