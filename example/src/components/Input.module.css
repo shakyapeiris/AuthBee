@@ -1,0 +1,19 @@
+.InputContainer {
+	display: block;
+	padding: 10px;
+}
+
+.InputContainer label{
+	display: block;
+}
+
+.InputContainer input {
+	width: 100%;
+	display: block;
+	outline: none;
+	border: 2px solid #563e33;
+	color: #563e33;
+	padding: 15px;
+	border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+}

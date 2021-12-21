@@ -25,9 +25,25 @@ const AuthProvider = ({ children }) => {
         }
     }, []);
 
+    const authLogin = (loginData, callback) => {
+        login(loginData)
+            .then(() => {
+                setToken(loginData.token)
+                callback();
+        }).catch(console.log)
+    }
+
+    const authLogout = (callback) => {
+        logout()
+            .then(() => {
+                setToken(null);
+                callback();
+            }).catch(console.log)
+    }
+
     const value = {
-        login,
-        logout,
+        login: authLogin,
+        logout: authLogout,
         token,
     };
 

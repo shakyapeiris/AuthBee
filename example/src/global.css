@@ -9,4 +9,13 @@
 body {
     font-family: 'Raleway', sans-serif;
     color: #563e33;
+    background: #ffd740;
+}
+
+a{
+	color: #563e33
+}
+
+.error{
+	color: red;
 }

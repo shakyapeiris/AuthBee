@@ -1,4 +1,5 @@
 import React from 'react';
+import classes from './Input.module.css'
 
 const Input = ({
     label,
@@ -11,7 +12,7 @@ const Input = ({
     errorMessage,
 }) => {
     return (
-        <div>
+        <div className={classes.InputContainer}>
             {label && <label htmlFor={id}>{label}</label>}
             <input
                 id={id}
@@ -20,7 +21,7 @@ const Input = ({
                 onBlur={onBlur}
                 value={value}
             />
-            {error && <span>{errorMessage}</span>}
+            {error && <span className="error">{errorMessage}</span>}
         </div>
     );
 };

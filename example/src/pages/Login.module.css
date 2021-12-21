@@ -1,0 +1,45 @@
+.Form{
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	border-radius: 5px;
+	background: #fdf9f1;
+	padding: 15px;
+}
+
+.Form h1{
+	text-align: center;
+}
+
+.Form button{
+	background: #fdf9f1;
+	border: 1px solid #563e33;
+	color: #563e33;
+	width: 30%;
+	margin: 0 35%;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.3s all ease;
+    font-family: 'Raleway', sans-serif;
+}
+
+.Form button:hover{
+	color: #fdf9f1;
+	background: #563e33;
+}
+
+.MainText, .SubText {
+	text-align: center;
+}
+
+.MainText {
+	margin-top: 10px;
+}
+
+.SubText {
+	font-weight: 600;
+	cursor: pointer;
+}

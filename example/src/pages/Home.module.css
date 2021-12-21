@@ -1,0 +1,11 @@
+.Container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.Container h1{
+	font-size: 3rem;
+}

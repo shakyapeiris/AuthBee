@@ -29,7 +29,7 @@ const NavBar = ({ children }) => {
                         {authCtx.token && (
                             <li
                                 onClick={() => {
-                                    navCtx.navigate('/account');
+                                    alert(`Your token is: ${authCtx.token}`)
                                 }}
                             >
                                 Account
@@ -38,7 +38,9 @@ const NavBar = ({ children }) => {
                         {authCtx.token && (
                             <li
                                 onClick={() => {
-                                    authCtx.logout();
+                                    authCtx.logout(() => {
+                                        navCtx.navigate('/')
+                                    });
                                 }}
                             >
                                 Logout
