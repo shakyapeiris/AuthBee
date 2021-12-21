@@ -55,7 +55,7 @@ Login is a promise and you must take `async` or `then` approach to use it. Also,
   	}
 ```
 
-### [2. Logout](https://github.com/shakyapeiris/AuthBee/blob/main/lib/login.js)
+### [2. Logout](https://github.com/shakyapeiris/AuthBee/blob/main/lib/logout.js)
 
 Logout is also a promise and since I use `async/await` in the previous example, I'll use `then` for this one. Also, there must be a token in the local storage aleady and if not the function will throw an error.
 
@@ -71,7 +71,7 @@ Logout is also a promise and since I use `async/await` in the previous example, 
 	}
 ```
 
-### [3. Verify](https://github.com/shakyapeiris/AuthBee/blob/main/lib/login.js)
+### [3. Verify](https://github.com/shakyapeiris/AuthBee/blob/main/lib/verify.js)
 
 Verify is the main function of the package since it is the function responsible for token validation and automatic logout functionalities. Most suitable place to use this function is in app wide state like contextAPI, redux, etc...
 
@@ -89,7 +89,7 @@ Verify is the main function of the package since it is the function responsible 
 	}
 ```
 
-### [4. Get Data](https://github.com/shakyapeiris/AuthBee/blob/main/lib/login.js)
+### [4. Get Data](https://github.com/shakyapeiris/AuthBee/blob/main/lib/getData.js)
 
 Using get data function, you can retrieve the data stored in local storage when you logged in to the system and this is useful if you want to get the token in order to use it as an authentication header when send a request to the backend.
 
