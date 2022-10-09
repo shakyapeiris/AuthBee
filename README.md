@@ -23,7 +23,7 @@ npm i authbee
 
 ## How to use AuthBee?
 
-Basicall there are four functions exported from the package and you can use it in any place of your application to retrieve, validate, login or logout user from your application. Check out the code snippets down below and also I reccomend you to checkout the React [example](https://github.com/shakyapeiris/AuthBee/tree/main/example) developed using AuthBee.
+Basicall there are four functions exported from the package and you can use it in any place of your application to retrieve, validate, login or logout user from your application. Check out the code snippets down below and also I recommend you to checkout the React [example](https://github.com/shakyapeiris/AuthBee/tree/main/example) developed using AuthBee.
 
 ### [1. Login](https://github.com/shakyapeiris/AuthBee/blob/main/lib/login.js)
 
