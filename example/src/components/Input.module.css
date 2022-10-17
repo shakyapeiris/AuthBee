@@ -1,10 +1,18 @@
 .InputContainer {
 	display: block;
 	padding: 10px;
+	width: 30%;
+	min-width: 300px;
+	margin-top: 15px;
 }
 
 .InputContainer label{
 	display: block;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-size: 12px;
+	margin-left: 15px;
 }
 
 .InputContainer input {
@@ -16,4 +24,5 @@
 	padding: 15px;
 	border-radius: 3px;
     font-family: 'Raleway', sans-serif;
+	border-radius: 50px;
 }

@@ -4,6 +4,8 @@ import { authContext } from '../context/authContext';
 import { navContext } from '../context/navContext';
 import useInput from '../hooks/useInput'
 import classes from './Login.module.css'
+import {IconLogin} from "@tabler/icons"
+
 
 const Login = () => {
     const usernameValidator = useInput((inputVal) => inputVal.trim() != "");
@@ -65,8 +67,8 @@ const Login = () => {
                     error={passwordValidator.hasError}
                     errorMessage="Enter a valid password"
                 />
-                <button type="submit">{isLogin ? 'Login' : 'Register'}</button>
-                <p className={classes.MainText}>{isLogin ? 'Dont Have an account?' : 'Already have an account?'}</p>
+                <button type="submit"><IconLogin />{isLogin ? 'Login' : 'Register'}</button>
+                <p className={classes.MainText}>{isLogin ? 'Dont Have An Account?' : 'Already Have An Account?'}</p>
                 <p className={classes.SubText} onClick={() => { setIsLogin(curr => !curr) }}>{isLogin ? 'Register' : 'Login'}</p>
             </form>
         </>

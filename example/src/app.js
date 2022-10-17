@@ -14,7 +14,7 @@ const app = () => {
                 ) : navCtx.route === '/login' ? (
                     <Login />
                 ) : (
-                    <span>404!</span>
+                    <div className="notFound">404!</div>
                 )}
             </NavBar>
         </>
