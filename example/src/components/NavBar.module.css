@@ -1,10 +1,17 @@
+.Main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .Header {
     display: flex;
-    padding: 20px;
+    padding: 50px 50px 20px 50px;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background: #fdf9f1;
+    /* background: #fdf9f1; */
 }
 
 .Header h1 {
@@ -13,17 +20,59 @@
 
 .Nav ul {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 .Nav ul li {
-    display: inline-flex;
-    margin-right: 7px;
+    margin-right: 15px;
+    margin-left: 15px;
     cursor: pointer;
-    padding-bottom: 6px;
     transition: 0.1s border-color ease;
+    font-size: 18px;
+    font-weight: 500;
+    height: 100%;
+    transition: 0.1s ease-in-out;
 }
 
-.Nav ul li:hover {
+.testBtn{
+    background-color: #ffd740;
+    padding: 9px 17.5px;
+    border-radius: 50px;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    border: 2px solid #563e33;
+    white-space: nowrap;
+}
+
+.account{
+    background-color: #ffd740;
+    padding: 9px;
+    border-radius: 50px;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    border: 2px solid #563e33;
+    white-space: nowrap;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+}
+
+.logout{
+    background-color: #563e33 !important;
+	color: #ffd740 !important;
+    padding: 9px 17.5px;
+    border-radius: 50px;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    border: 2px solid #563e33;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Nav ul li:not(.testBtn,.account,.logout):hover {
     padding-bottom: 3px;
     border-bottom: 3px solid #563e33;
 }
@@ -31,3 +80,8 @@
 .Nav ul li:last-child {
     margin-right: none;
 }
+
+.webPage{
+    flex: 1;
+}
+
